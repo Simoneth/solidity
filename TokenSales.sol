@@ -23,12 +23,12 @@ contract TokenSales is TokenSalesInterface {
 
   modifier ifOwner() {
     if (msg.sender != owner) throw;
-    _
+    _;
   }
 
   modifier ifOOrigin() {
     if (tx.origin != owner) throw;
-    _
+    _;
   }
 
   mapping (address => address) proxyPayouts;
